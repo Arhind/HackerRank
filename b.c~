@@ -1,0 +1,18 @@
+#include<stdio.h>
+#include<malloc.h>
+#include<string.h>
+main()
+{
+int i;
+char a[]="String";
+char *p="New String";
+char *Temp;
+Temp=a;
+a=struct (malloc(strlen(p)+1));
+strcpy(a,p);
+p=malloc(strlen(Temp)+1);
+strcpy(p,Temp);
+printf("(%s, %s)", a, p);
+free(p);
+free(a);
+}
