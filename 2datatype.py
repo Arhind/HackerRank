@@ -1,6 +1,0 @@
-a = int(input())
-b = float(input())
-str = input()
-print(a+i)
-print(b+d)
-print(s+str)
